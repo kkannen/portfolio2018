@@ -1,0 +1,241 @@
+/* light olive green:#A4BE6E */
+.PortPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PortPage > h1 {
+  font-family: 'Allura', cursive;
+  font-weight: lighter;
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
+.PortPage > p > a {
+  text-decoration: none;
+  color: #A4BE6E;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./img/leaves.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 10px 30px #000a;
+  color: white;
+}
+
+.headerStrip {
+  width: 100%;
+  background-color: #000a;
+  margin-top: 35vh;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: 'Allura', cursive;
+}
+
+header > i {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 60px;
+  color: #fffd;
+  -webkit-animation: arrow 1.5s both infinite;
+  animation: arrow 1.5s both infinite;
+}
+
+@-webkit-keyframes arrow {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+  }
+} 
+
+@keyframes arrow {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.headerStrip > hr {
+  border-color: white;
+  width: 33%
+}
+
+.headerStrip > h1 {
+font-size: 75px;
+font-weight: lighter
+}
+
+.gridWrapper{
+  width: 90%;
+  margin: 15px 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows:minmax(10em, auto);
+  grid-gap: 0.5em;
+}
+
+.tile {
+  position: relative;
+  background-size: cover;
+  border: 1px solid #eee
+}
+
+.tile1{
+  background-image: url("./img/cs-study-guide.png");
+	grid-column: 1/3;
+	grid-row: 1/3
+}
+
+.tile2{
+  background-image: url("./img/Authentication.png");
+}
+
+.tile3{
+  background-image: url("./img/calculator.png");
+}
+
+.tile5{
+  background-image: url("./img/time-wasters.png");
+}
+
+.tile4{
+  background-image: url("./img/todo.png");
+}
+
+.tile6{
+  background-image: url("./img/Driftwood.png");
+  grid-column: 3/5;
+	grid-row: 2/4
+}
+
+.overlay > .title {
+  margin: 1em 0em 0em 1em;
+  font-weight: bold;
+  width: 40%;
+  transition: 400ms;
+}
+
+.overlay > .description{
+  margin: 1em;
+  color: transparent;
+  transition-duration: 400ms;
+  transition-delay: 50ms;
+}
+
+.overlay > .description > a {
+  color: transparent;
+}
+
+.overlay > i {
+  float: right;
+  margin: -1em 1em 0em 0em;
+}
+
+.overlay {
+  background-color: #0005;
+  color: white;
+  bottom: 0px;
+  width:100%;
+  height: 3em;
+  position: absolute;
+  transition: all 400ms;
+  overflow: hidden;
+}
+
+
+.overlay > a, {
+  transition-duration: 400ms;
+  transition-delay: 75ms;
+}
+
+.overlay > a > button {
+  background-color: white;
+  color: black;
+  height: 3em;
+  width: 60%;
+  margin-left: 20%;
+  border: none;
+  transition-duration: 400ms;
+  transition-delay: 200ms;
+  cursor: pointer;
+}
+
+.overlay > .description {
+  color: white;
+  transition-duration: 400ms;
+  transition-delay: 75ms;
+}
+
+.tile1:hover .overlay, .tile6:hover .overlay{
+  background-color: #000c;
+  height:20.5em;
+}
+
+.tile2:hover .overlay, .tile3:hover .overlay, .tile4:hover .overlay, .tile5:hover .overlay{
+  background-color: #000c;
+  height:10em; 
+}
+
+.tile:hover .overlay > .title{
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+
+.tile .overlay > .description > a {
+  color: #A4BE6E;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.iconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.lilDot  {
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background-color: #A4BE6E ;
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  transition: 200ms;
+}
+
+.iconContainer:hover > .lilDot {
+  height: 60px;
+  width: 60px;
+  opacity: 0.85;
+}
+
+.footIcon {
+  height: 35px;
+  width: 45px;
+  margin: 20px;
+}
