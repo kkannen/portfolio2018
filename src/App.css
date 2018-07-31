@@ -33,12 +33,37 @@ header {
   width: 100%;
   background-color: #000a;
   margin-top: 35vh;
-  height: 30vh;
+  height: 15em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nameContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: 'Allura', cursive;
+  width: 100%;
+  font-size: 3em;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.nameContainer > h1 {
+  margin: 0px;
+}
+
+.headerStrip > h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.headerStrip > div > hr {
+ width: 25%;
 }
 
 header > i {
@@ -72,16 +97,6 @@ header > i {
   60% {
     transform: translateY(-15px);
   }
-}
-
-.headerStrip > hr {
-  border-color: white;
-  width: 33%
-}
-
-.headerStrip > h1 {
-font-size: 75px;
-font-weight: lighter
 }
 
 .gridWrapper{
