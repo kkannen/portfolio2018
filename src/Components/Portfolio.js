@@ -53,10 +53,8 @@ export default class Resume extends React.Component {
                     <div className='headerStrip'>
                       <div className='nameContainer'>
                         <hr/>
-
-                            <h1>Krista Kannen</h1>
-
-                          <hr/>
+                        <h1>Krista Kannen</h1>
+                        <hr/>
                       </div>
                       <h3>MERN stack developer | Retired Biologist | Anteater Enthusiast</h3>
                     </div>
